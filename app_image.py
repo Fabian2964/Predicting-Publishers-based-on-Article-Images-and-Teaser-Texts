@@ -39,7 +39,3 @@ if file_uploaded is not None:
 	image_class = class_names[np.argmax(scores)]
 	result = "The image uploaded is: {}".format(image_class)
 	result
-
-ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
-
-tensorflow 2.9.1 requires protobuf<3.20,>=3.9.2, but you have protobuf 3.20.1 which is incompatible.
