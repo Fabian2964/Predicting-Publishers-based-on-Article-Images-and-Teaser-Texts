@@ -23,8 +23,6 @@ if file_uploaded is not None:
 	figure = plt.figure()
 	plt.imshow(image)
 	plt.axis('off')
-	result = predict_class(image)
-	st.write(result)
 	st.pyplot(figure)
 	img = IMG.load_img(file_uploaded,target_size=[150,150])
 
@@ -37,5 +35,4 @@ if file_uploaded is not None:
 	scores = tf.nn.softmax(pred[0])
 	scores = scores.numpy()
 	image_class = class_names[np.argmax(scores)]
-	result = "The image uploaded is: {}".format(image_class)
-	result
+	st.write("The image uploaded is: {}".format(image_class))
