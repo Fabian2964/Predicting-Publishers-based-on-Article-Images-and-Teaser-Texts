@@ -31,7 +31,7 @@ if file_uploaded is not None:
 	x = IMG.img_to_array(img)
 	x = np.expand_dims(x, axis=0)
 	class_names = ['FAZ', 'Spiegel']
-	pred = classification.predict(x)
+	pred = classifier.predict(x)
 	scores = tf.nn.softmax(pred[0])
 	scores = scores.numpy()
 	image_class = class_names[np.argmax(scores)]
