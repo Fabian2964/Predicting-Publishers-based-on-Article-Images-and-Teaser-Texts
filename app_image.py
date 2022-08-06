@@ -14,7 +14,9 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.activations import softmax
 from tensorflow.keras.preprocessing import image as IMG
 
-st.header("News Image Class Predictor - Frankfurter Allgemeine vs. Spiegel")
+
+st.image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4N6AV78lhdai8FnkNP5TTJvlvLzQqAAa3AM527sksFy1MC-g7Oj3jbt1E_1rKt2oaAQ&usqp=CAU", width=200)
+st.header("News Image Classifier - F.A.Z. vs. Spiegel")
 
 
 file_uploaded = st.file_uploader("Choose the file", type = ['jpg', 'png', 'jpeg'])
