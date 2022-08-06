@@ -15,8 +15,8 @@ from tensorflow.keras.activations import softmax
 from tensorflow.keras.preprocessing import image as IMG
 
 
-st.image("https://www.movassat.de/faznet-aus-deutschland-abgeschobener-afghane-toetet-sich-selbst", width=200)
-st.image("https://www.designtagebuch.de/rebrush-bei-spiegel-online/spiegel-online-logo/", width=200)
+st.image("https://www.movassat.de/sites/default/files/styles/thumbnail_standard/public/images/2017/FAZ_0.png?itok=QR9LPOs2", width=200)
+st.image("https://www.designtagebuch.de/wp-content/uploads/mediathek//2016/09/spiegel-online-logo.png", width=200)
 st.header("News Image Classifier - F.A.Z. vs. Spiegel")
 
 
