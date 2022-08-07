@@ -46,6 +46,7 @@ if file_uploaded is not None:
 	
 st.text("")
 st.text("")
+st.text("")
 st.image("fazzeit_logo.png", width=350)
 st.header("News Teaser Text Classifier | F.A.Z. or Zeit?")
 
