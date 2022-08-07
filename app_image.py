@@ -13,8 +13,8 @@ from tensorflow.keras import preprocessing
 from tensorflow.keras.models import load_model
 from tensorflow.keras.activations import softmax
 from tensorflow.keras.preprocessing import image as IMG
-from keras.preprocessing.sequence import pad_sequences
-from keras.preprocessing import sequence
+from tensorflow.keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.preprocessing import sequence
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow import keras
 import pickle
