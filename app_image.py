@@ -44,7 +44,8 @@ if file_uploaded is not None:
 	image_class = class_names[np.argmax(scores)]
 	st.write("The image uploaded is: {}".format(image_class))
 	
-	
+st.text("")
+st.text("")
 st.image("fazzeit_logo.png", width=350)
 st.header("News Teaser Text Classifier | F.A.Z. or Zeit?")
 
