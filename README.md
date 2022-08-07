@@ -60,3 +60,19 @@ The entire dataset was randomly split into training, validation and test data. M
     
 ## Web App
 In addition to the slides and visuals presented, the model is embedded in a dedicated [streamlit app](https://fabian2964-deep-learning-app-image-pca3lj.streamlitapp.com/) and project outputs are placed on my personal [github](https://github.com/Fabian2964/deep_learning.git).
+
+## Classification Examples
+### Image Binary classification
+![image](https://user-images.githubusercontent.com/98846184/183308197-9e22991c-c8aa-4bd2-a32d-bdae7f0445bb.png)
+
+![image](https://user-images.githubusercontent.com/98846184/183308201-622a349c-80c3-4591-a7b9-5e36c020ddf3.png)
+
+![image](https://user-images.githubusercontent.com/98846184/183308206-52e7e3b9-78a8-4e83-af35-99d8d5dbd3e3.png)
+
+![image](https://user-images.githubusercontent.com/98846184/183308208-6ba25955-e401-4b20-96ae-38c87f1534fc.png)
+
+### Text Binary classification
+![image](https://user-images.githubusercontent.com/98846184/183308219-b05ff9b6-0842-4504-bbf8-51d40f11577f.png)
+
+![image](https://user-images.githubusercontent.com/98846184/183308222-88ec6925-1738-4626-ad01-29ceb956b7a3.png)
+
