@@ -54,7 +54,7 @@ body = st.text_area('Copy-Paste Teaser Text')
 # If button is pressed
 if st.button('Submit'):
 	# Unpickle classifier
-	text_classifier = tf.keras.models.load_model(r'project/basic_lstm_model_fazzeit.h5')
+	text_classifier = tf.keras.models.load_model('basic_lstm_model_fazzeit.h5')
 	ex = pd.Series(body.lower())
 	
 	with open('tokenizer.pickle', 'rb') as handle:
