@@ -13,10 +13,14 @@ from tensorflow.keras import preprocessing
 from tensorflow.keras.models import load_model
 from tensorflow.keras.activations import softmax
 from tensorflow.keras.preprocessing import image as IMG
+from keras.preprocessing.sequence import pad_sequences
+from keras.preprocessing import sequence
+from tensorflow.keras.preprocessing.text import Tokenizer
+from tensorflow import keras
+import pickle
 
 
 st.image("faz_spiegel.png", width=200)
-
 st.header("News Image Classifier | F.A.Z. or Spiegel?")
 
 
@@ -39,3 +43,30 @@ if file_uploaded is not None:
 	scores = scores.numpy()
 	image_class = class_names[np.argmax(scores)]
 	st.write("The image uploaded is: {}".format(image_class))
+	
+	
+st.image("fazzeit_logo.png", width=200)
+st.header("News Teaser Text Classifier | F.A.Z. or Zeit?")
+
+# Input bar 1
+body = st.text_area('Copy-Paste Teaser Text')
+
+# If button is pressed
+if st.button('Submit'):
+	# Unpickle classifier
+	text_classifier = tf.keras.models.load_model(r'project/basic_lstm_model_fazzeit.h5')
+	ex = pd.Series(body.lower())
+	
+	with open('tokenizer.pickle', 'rb') as handle:
+		tokenizer = pickle.load(handle)
+	tokenized_texts = tokenizer.texts_to_sequences(ex)
+	X = sequence.pad_sequences(tokenized_texts, maxlen=50)
+	text_classifier.predict(X)
+	
+	y_pred = np.argmax(text_classifier.predict(X),axis =1)
+	y_pred1 = str(y_pred[0]).replace('1', 'Zeit')
+	y_pred2 = str(y_pred1).replace('0', 'FAZ')
+
+	# Output prediction
+	st.text(f'The Publisher of the Teaser is:')
+	st.metric("", y_pred2)
