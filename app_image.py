@@ -45,7 +45,7 @@ if file_uploaded is not None:
 	st.write("The image uploaded is: {}".format(image_class))
 	
 	
-st.image("fazzeit_logo.png", width=400)
+st.image("fazzeit_logo.png", width=350)
 st.header("News Teaser Text Classifier | F.A.Z. or Zeit?")
 
 # Input bar 1
