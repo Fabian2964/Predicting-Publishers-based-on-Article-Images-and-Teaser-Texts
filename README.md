@@ -6,6 +6,8 @@ The goal of this project was to use neural networks to predict newspaper publish
 ## Design
 The project topic supports a question of data-driven journalism. Feature data was scraped from publishers’ homepages and from corresponding URL of each image. After conversion to numerical arrays, baseline non-deep-learning models and neural net models were constructed and their performance compared. Lastly, correctly and falsely classified images and texts of were inspected within and between publishers. Inspecting differences in images and texts may support journalists to deliberately choose images and texts characteristics. On a more global level it may also help to detect differences between publishers with different readerships such as right- or left-wing.
 
+![Workflow](https://user-images.githubusercontent.com/98846184/183523308-83883abd-d2e4-4ecb-84fe-286d9589bb7c.png)
+
 ![image](https://user-images.githubusercontent.com/98846184/183307200-ed756f6b-dcbf-46a1-9eb5-124147019e75.png)
 
 ![image](https://user-images.githubusercontent.com/98846184/183307203-8c6b24c3-5c9b-4915-88ec-49611c511c5d.png)
