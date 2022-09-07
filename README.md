@@ -1,4 +1,4 @@
-# Project Write-up – Predicting Newspaper Publishers based on Article Images and Teaser Texts
+# Predicting Newspaper Publishers based on Article Images and Teaser Texts
 
 ## Abstract
 The goal of this project was to use neural networks to predict newspaper publishers for article images and article teaser texts published online to more deliberately control images and introductory texts of published stories to draw audience interests. Additionally, the model may provide evidence for journalists which article images and teaser text characteristics are used by competitors. My analysis was based on images and teaser texts of 4 German publishers (F.A.Z., Spiegel Online, Zeit Online and SZ Online) published in the category “politics” on their main homepage Feb’22 to Jul’22. In feature engineering, I converted images and teasers to numerical arrays. In terms of modeling, features were fed to convolutional neural net, LSTM and several pre-trained models by using transfer learning. Finally, models were integrated into a web app on streamlit enabling to pass images and teaser texts to predict publishers.
